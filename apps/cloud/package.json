@@ -4,15 +4,31 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "pnpm cross-env NODE_ENV=production vite build",
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo",
     "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "npm run build && vite preview",
+    "preview:dist": "vite preview",
+    "report": "pnpm cross-env REPORT=true npm run build",
+    "server:br": "pnpx http-server dist --cors --brotli -c-1",
+    "server:gzip": "pnpx http-server dist --cors --gzip -c-1",
+    "type:check": "vue-tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
-    "@config/vite": "workspace:^",
-    "vue": "^3.3.11"
+    "@iconify/iconify": "^3.1.1",
+    "@repo/utils": "workspace:^",
+    "dayjs": "^1.11.10",
+    "mockjs": "^1.1.0",
+    "monaco-editor": "^0.45.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@config/css-preprocess": "workspace:^",
+    "@config/vite": "workspace:^",
+    "@repo/types": "workspace:^",
+    "@types/mockjs": "^1.0.10",
     "@vitejs/plugin-vue": "^4.5.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
