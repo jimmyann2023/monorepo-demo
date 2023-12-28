@@ -1,0 +1,14 @@
+
+> @app/cloud@0.0.0 build C:\Users\Administrator\Desktop\Monorepo\repo\apps\cloud
+> vue-tsc && vite build
+
+js emit is not supported
+
+C:\Users\Administrator\Desktop\Monorepo\repo\node_modules\.pnpm\vue-tsc@1.8.27_typescript@5.3.3\node_modules\vue-tsc\bin\vue-tsc.js:68
+			throw err;
+			^
+js emit is not supported
+(Use `node --trace-uncaught ...` to show where the exception was thrown)
+
+Node.js v20.0.0
+ ELIFECYCLE  Command failed with exit code 1.
