@@ -1,0 +1,27 @@
+{
+  "name": "@repo/utils",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "type": "module",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^7.0.0",
+    "@formkit/auto-animate": "^0.8.1",
+    "@vue/runtime-core": "^3.3.13",
+    "@vueuse/core": "^10.7.1",
+    "@vueuse/shared": "^10.7.1",
+    "dayjs": "^1.11.10",
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.1.7",
+    "sortablejs": "^1.15.1",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@repo/types": "workspace:^",
+    "@types/lodash-es": "^4.17.12"
+  }
+}
