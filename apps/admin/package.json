@@ -1,0 +1,24 @@
+{
+  "name": "@app/admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm cross-env NODE_ENV=production vite build",
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo",
+    "dev": "vite",
+    "preview": "npm run build && vite preview",
+    "preview:dist": "vite preview",
+    "report": "pnpm cross-env REPORT=true npm run build",
+    "server:br": "pnpx http-server dist --cors --brotli -c-1",
+    "server:gzip": "pnpx http-server dist --cors --gzip -c-1",
+    "type:check": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "dependencies": {
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.8"
+  }
+}

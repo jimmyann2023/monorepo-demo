@@ -7,10 +7,17 @@
     "moduleResolution": "Node",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "#/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ],
+      "#/*": [
+        "src/*"
+      ]
     },
-    "lib": ["dom", "esnext"],
+    "lib": [
+      "dom",
+      "esnext"
+    ],
     "types": [
       "vite/client",
     ]

@@ -1,5 +1,5 @@
 import prompts from 'prompts'
-import { execa} from 'execa'
+import { execa } from 'execa'
 import { isArray, isString } from '@repo/utils'
 import { DEFAULT_SELECT_TYPE } from './constant'
 import { commandArgv, error, filterWorkspace, getWorkspacePackages } from './helper'
