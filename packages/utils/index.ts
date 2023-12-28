@@ -21,6 +21,6 @@ import Sortable from "sortablejs";
 
 export { Sortable };
 
-// export * from "./src/datastructure";
-// export { getSlot, extendSlots } from "./src/helper/tsxHelper";
+export * from "./src/datastructure";
+export { getSlot, extendSlots } from "./src/helper/tsxHelper";
 export { vAutoAnimate } from "@formkit/auto-animate";

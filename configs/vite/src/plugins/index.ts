@@ -7,6 +7,8 @@ import { configHtmlPlugin } from "./html";
 import { configMockPlugin } from "./mock";
 import { configCompressPlugin } from "./compress";
 import { configUnocssPlugin } from "./unocss";
+import { configHttpsPlugin } from "./https";
+import { createConfigPlugin } from "./config";
 
 export async function configVitePlugins(
   root: string,
@@ -37,7 +39,7 @@ export async function configVitePlugins(
   // unocss
   vitePlugins.push(configUnocssPlugin())
 
-  // vitePlugins.push(createConfigPlugin())
+  vitePlugins.push(createConfigPlugin())
 
   // vite-plugin-svg-icons
   // vitePlugins.push(configSvgIconsPlugin(isBuild))
@@ -52,7 +54,7 @@ export async function configVitePlugins(
   // vitePlugins.push(configVisualizerConfig())
 
   // http2
-  // vitePlugins.push(configHttpsPlugin(viteEnv))
+  vitePlugins.push(configHttpsPlugin(viteEnv))
   // monacoEditorPlugin
   // vitePlugins.push(monacoEditorPlugin({}))
   // MonorepoSupport
