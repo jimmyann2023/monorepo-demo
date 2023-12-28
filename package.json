@@ -23,6 +23,9 @@
     "turbo:preview": "turbo run preview --parallel",
     "version": "pnpm run changeset version"
   },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@config/lint": "workspace:^",
