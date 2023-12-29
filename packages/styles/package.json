@@ -1,0 +1,7 @@
+{
+  "name": "@repoi/styles",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  }
+}
