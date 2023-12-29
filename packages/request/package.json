@@ -1,0 +1,20 @@
+{
+  "name": "@repo/request",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@repo/locale": "workspace:^",
+    "@repo/types": "workspace:^",
+    "@repo/utils": "workspace:^",
+    "axios": "^1.6.3",
+    "axios-retry": "^4.0.0",
+    "qs": "^6.11.2"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.11"
+  }
+}
